@@ -1,2 +1,3 @@
-# rst
-RST (React Starter Template) is an opinionated React/TypeScript starter template.
+# RST
+
+RST (React Starter Template) is an opinionated `React/TypeScript` starter template.

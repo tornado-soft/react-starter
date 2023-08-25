@@ -1,4 +1,9 @@
 brucesong
-commitlint
 clsx
+commitlint
+lintstaged
+nocheck
+nprogress
 preinstall
+tailwindcss
+unplugin

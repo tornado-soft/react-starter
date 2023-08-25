@@ -1,6 +1,10 @@
 # React TypeScript Starter Template
 
-## Features
+English / [简体中文](./README.zh-CN.md)
+
+⚛️ An opinionated React/TypeScript starter template.
+
+## Tech Stack
 
 - [x] Based on [React](https://react.dev/), [Vite](https://vitejs.dev/)
 - [x] [TypeScript](https://www.typescriptlang.org/), of course
@@ -25,12 +29,6 @@
       [commitlint](https://commitlint.js.org/#/), [cz-git](https://cz-git.qbb.sh/) for Git commit management
 - [x] Support absolute path import, use `@/*`
 - [x] Deploy on [Vercel](https://vercel.com/), zero configuration
-
-## Tech Stack
-
-- [React](https://reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Usage
 

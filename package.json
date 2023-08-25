@@ -1,6 +1,6 @@
 {
   "name": "react-ts-starter-template",
-  "description": "⚛️ React TypeScript Starter Template is an opinionated React/TypeScript starter template.",
+  "description": "⚛️ An opinionated React/TypeScript starter template.",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "type": "module",
   "scripts": {
@@ -19,13 +19,15 @@
   "dependencies": {
     "clsx": "^2.0.0",
     "dayjs": "^1.11.9",
+    "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@brucesong/eslint-config-react": "^1.0.4",
+    "@brucesong/eslint-config-react": "^1.0.7",
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -36,6 +38,7 @@
     "prettier": "^3.0.2",
     "sass": "^1.66.1",
     "typescript": "^5.2.2",
+    "unplugin-auto-import": "^0.16.6",
     "vite": "^4.4.9"
   },
   "packageManager": "pnpm@8.5.0",

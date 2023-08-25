@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/base-api/:path*",
-      "destination": "https://api-url/:path*"
+      "destination": "https://localhost:3000/:path*"
     },
     {
       "source": "/:path*",

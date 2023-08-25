@@ -1,0 +1,31 @@
+{
+  "name": "react-ts-starter-template",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "cspell:check": "cspell \"**\"",
+    "eslint:check": "eslint \"**/*.{ts,tsx}\" --color",
+    "eslint:fix": "pnpm eslint:check --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --check --write --ignore-unknown .",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@brucesong/eslint-config-react": "^1.0.4",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.47.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
+  },
+  "private": true,
+  "license": "MIT"
+}

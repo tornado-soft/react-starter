@@ -2,9 +2,29 @@
 
 ## Features
 
-- [ ] xxx
-- [ ] xxx
-- [ ] xxx
+- [x] Based on [React](https://react.dev/), [Vite](https://vitejs.dev/)
+- [x] [TypeScript](https://www.typescriptlang.org/), of course
+- [ ] [Ant Design](https://ant.design/) as UI framework
+- [x] [TailwindCSS](https://tailwindcss.com/), a utility-first CSS framework
+- [x] [pnpm](https://pnpm.io/) as package manager
+- [x] [Sass](https://sass-lang.com/) as CSS preprocessor
+- [ ] [React Router](https://reactrouter.com/) for routing management
+- [ ] [Zustand](https://zustand-demo.pmnd.rs/) for global state management
+- [x] [Axios](https://axios-http.com/) for request, and highly encapsulated
+- [ ] [Tanstack Query](https://tanstack.com/) for request state management
+- [ ] [React Hook Form](https://www.react-hook-form.com/), [yup](https://github.com/jquense/yup) for form validation
+- [x] [iconify/json](https://iconify.design/) and [unplugin-icons](https://github.com/antfu/unplugin-icons)
+      for icon management, you can use [icones](https://icones.js.org/) to use it quickly
+- [x] [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) and
+      [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) for automatic import
+      of components, hooks, and utility classes, freeing your hands
+- [x] [ESLint](https://eslint.org/) for code checking
+- [x] [Prettier](https://prettier.io/) for code formatting
+- [x] [CSpell](https://cspell.org/) for code spelling checking
+- [x] [Husky](https://typicode.github.io/husky/), [lint-staged](https://github.com/okonet/lint-staged),
+      [commitlint](https://commitlint.js.org/#/), [cz-git](https://cz-git.qbb.sh/) for Git commit management
+- [x] Support absolute path import, use `@/*`
+- [x] Deploy on [Vercel](https://vercel.com/), zero configuration
 
 ## Tech Stack
 

@@ -1,12 +1,12 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/favicon.svg'
+import Home from '@/pages/Home'
 
 export default function App() {
-  const [count, setCount] = useState(0)
+  const increment = useCounterStore((state) => state.increment)
 
   return (
-    <>
+    <div>
       <div>
         <a
           href="https://vitejs.dev"
@@ -35,9 +35,9 @@ export default function App() {
       <div className="card">
         <button
           type="button"
-          onClick={() => setCount((x) => x + 1)}
+          onClick={() => increment(1)}
         >
-          count is {count}
+          Increment
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
@@ -46,6 +46,7 @@ export default function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+      <Home />
+    </div>
   )
 }

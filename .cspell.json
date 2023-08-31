@@ -13,7 +13,7 @@
     }
   ],
   "ignorePaths": [
-    ".cspell",
+    ".cspell.txt",
     ".github/workflows/**",
     ".vscode/*.json",
     "**/.vercel",

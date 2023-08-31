@@ -3,6 +3,7 @@ import { fileURLToPath, URL } from 'node:url'
 import react from '@vitejs/plugin-react-swc'
 import type { ProxyOptions } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
+import Icons from 'unplugin-icons/vite'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
@@ -30,10 +31,7 @@ export default defineConfig(({ mode }) => {
         imports: [
           'react',
           'react-router-dom',
-          {
-            axios: [['default', 'axios']],
-            dayjs: [['default', 'dayjs']]
-          },
+          'ahooks',
           {
             from: '@/constants',
             imports: ['GlobalEnvConfig', 'BasePageModel']
@@ -49,7 +47,8 @@ export default defineConfig(({ mode }) => {
           'src/store',
           'src/utils'
         ]
-      })
+      }),
+      Icons({ autoInstall: true })
     ],
     resolve: {
       alias: {

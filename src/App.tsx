@@ -1,52 +1,38 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/favicon.svg'
-import Home from '@/pages/Home'
+import reactLogo from '@/assets/svg/react.svg'
+import viteLogo from '@/assets/svg/vite.svg'
 
 export default function App() {
-  const increment = useCounterStore((state) => state.increment)
-
   return (
-    <div>
-      <div>
-        <a
-          href="https://vitejs.dev"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={viteLogo}
-            className="logo"
-            alt="Vite logo"
-          />
-        </a>
-        <a
-          href="https://react.dev"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={reactLogo}
-            className="logo react"
-            alt="React logo"
-          />
-        </a>
+    <div className="relative h-screen w-full">
+      <div className="absolute inset-0 bottom-20 m-auto flex h-fit w-fit flex-col space-y-4">
+        <div className="flex items-center justify-center space-x-4">
+          <a
+            href="https://vitejs.dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={viteLogo}
+              width="64"
+              className="logo"
+              alt="Vite logo"
+            />
+          </a>
+          <a
+            href="https://react.dev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={reactLogo}
+              width="64"
+              className="logo react"
+              alt="React logo"
+            />
+          </a>
+        </div>
+        <span className="text-2xl">React TypeScript Starter Template</span>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button
-          type="button"
-          onClick={() => increment(1)}
-        >
-          Increment
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <Home />
     </div>
   )
 }

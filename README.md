@@ -13,7 +13,7 @@ English / [简体中文](./README.zh-CN.md)
 - [x] [pnpm](https://pnpm.io/) as package manager
 - [x] [Sass](https://sass-lang.com/) as CSS preprocessor
 - [ ] [React Router](https://reactrouter.com/) for routing management
-- [ ] [Zustand](https://zustand-demo.pmnd.rs/) for global state management
+- [x] [Zustand](https://zustand-demo.pmnd.rs/) for global state management
 - [x] [Axios](https://axios-http.com/) for request, and highly encapsulated
 - [ ] [Tanstack Query](https://tanstack.com/) for request state management
 - [ ] [React Hook Form](https://www.react-hook-form.com/), [yup](https://github.com/jquense/yup) for form validation

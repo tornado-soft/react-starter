@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:docker": "docker-compose up -d",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "cspell:check": "cspell \"**\"",

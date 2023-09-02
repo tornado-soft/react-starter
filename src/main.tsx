@@ -1,4 +1,4 @@
-import '@/assets/styles/base.scss'
+import '@/assets/styles/main.scss'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'

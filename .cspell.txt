@@ -10,4 +10,5 @@ nprogress
 preinstall
 tailwindcss
 unplugin
+vite
 zustand

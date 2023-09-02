@@ -4,6 +4,7 @@ node_modules
 # Production
 dist
 build
+.env
 
 # Logs
 logs

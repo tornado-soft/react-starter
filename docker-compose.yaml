@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  taskward:
+  react-ts-starter-template:
     container_name: react-ts-starter-template
     env_file:
       - .env

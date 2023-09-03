@@ -16,6 +16,10 @@ export default function BaseHeader(): React.JSX.Element {
       path: '/store'
     },
     {
+      label: 'React Query',
+      path: '/react-query'
+    },
+    {
       label: 'Author GitHub',
       path: 'https://github.com/recallwei',
       outer: true

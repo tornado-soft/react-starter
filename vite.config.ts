@@ -7,7 +7,8 @@ import Icons from 'unplugin-icons/vite'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
-  const { VITE_PORT, VITE_BASE_API_URL } = env as ImportMetaEnv
+  const { VITE_PORT, VITE_BASE_API_URL, VITE_MOCK_API_URL } =
+    env as ImportMetaEnv
 
   const port = parseInt(VITE_PORT, 10)
   const proxy: Record<string, string | ProxyOptions> = {
@@ -15,6 +16,11 @@ export default defineConfig(({ mode }) => {
       target: VITE_BASE_API_URL,
       changeOrigin: true,
       rewrite: (path: string) => path.replace(/^\/base-api/, '')
+    },
+    '/mock-api': {
+      target: VITE_MOCK_API_URL,
+      changeOrigin: true,
+      rewrite: (path: string) => path.replace(/^\/mock-api/, '')
     }
   }
 
@@ -32,6 +38,10 @@ export default defineConfig(({ mode }) => {
           'react',
           'react-router-dom',
           'ahooks',
+          {
+            from: '@tanstack/react-query',
+            imports: ['useQueryClient', 'useQuery', 'useMutation']
+          },
           {
             from: '@/constants',
             imports: ['GlobalEnvConfig', 'BasePageModel']

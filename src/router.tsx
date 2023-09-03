@@ -19,6 +19,10 @@ const router = createRoutesFromElements(
       lazy={() => import('./pages/store')}
     />
     <Route
+      path="/react-query"
+      lazy={() => import('./pages/react-query')}
+    />
+    <Route
       path="*"
       element={<NotFound />}
     />

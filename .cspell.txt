@@ -4,6 +4,7 @@ brucesong
 clsx
 commitlint
 cssinjs
+hookform
 iconify
 lintstaged
 nocheck
@@ -11,6 +12,7 @@ nprogress
 preinstall
 svgr
 tailwindcss
+tanstack
 unplugin
 vite
 zustand

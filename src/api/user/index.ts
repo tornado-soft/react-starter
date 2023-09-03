@@ -8,7 +8,7 @@ import type {
 import Request from '../axios'
 
 export class UserAPI {
-  private static USER_API_PREFIX = `${GlobalEnvConfig.BASE_API_PREFIX}/users`
+  private static USER_API_PREFIX = `${GlobalEnvConfig.MOCK_API_PREFIX}/users`
 
   /**
    * 用户列表

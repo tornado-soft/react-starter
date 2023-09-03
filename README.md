@@ -15,7 +15,7 @@ English / [简体中文](./README.zh-CN.md)
 - [x] [React Router](https://reactrouter.com/) for routing management
 - [x] [Zustand](https://zustand-demo.pmnd.rs/) for global state management
 - [x] [Axios](https://axios-http.com/) for request, and highly encapsulated
-- [ ] [Tanstack Query](https://tanstack.com/) for request state management
+- [x] [Tanstack Query](https://tanstack.com/) for request state management
 - [ ] [React Hook Form](https://www.react-hook-form.com/), [yup](https://github.com/jquense/yup) for form validation
 - [x] [iconify/json](https://iconify.design/) and [unplugin-icons](https://github.com/antfu/unplugin-icons)
       for icon management, you can use [icones](https://icones.js.org/) to use it quickly

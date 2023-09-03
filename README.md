@@ -8,11 +8,11 @@ English / [简体中文](./README.zh-CN.md)
 
 - [x] Based on [React](https://react.dev/), [Vite](https://vitejs.dev/)
 - [x] [TypeScript](https://www.typescriptlang.org/), of course
-- [ ] [Ant Design](https://ant.design/) as UI framework
+- [x] [Ant Design](https://ant.design/) as UI framework
 - [x] [TailwindCSS](https://tailwindcss.com/), a utility-first CSS framework
 - [x] [pnpm](https://pnpm.io/) as package manager
 - [x] [Sass](https://sass-lang.com/) as CSS preprocessor
-- [ ] [React Router](https://reactrouter.com/) for routing management
+- [x] [React Router](https://reactrouter.com/) for routing management
 - [x] [Zustand](https://zustand-demo.pmnd.rs/) for global state management
 - [x] [Axios](https://axios-http.com/) for request, and highly encapsulated
 - [ ] [Tanstack Query](https://tanstack.com/) for request state management

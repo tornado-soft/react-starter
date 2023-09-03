@@ -3,11 +3,13 @@ Antd
 brucesong
 clsx
 commitlint
+cssinjs
 iconify
 lintstaged
 nocheck
 nprogress
 preinstall
+svgr
 tailwindcss
 unplugin
 vite

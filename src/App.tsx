@@ -1,38 +1,28 @@
-import reactLogo from '@/assets/svg/react.svg'
-import viteLogo from '@/assets/svg/vite.svg'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import zhCN from 'antd/locale/zh_CN'
+import { ConfigProvider, theme as Theme } from 'antd'
+import router from '@/router'
+import { StyleProvider } from '@ant-design/cssinjs'
 
 export default function App() {
+  const { theme } = useThemeStore()
+
+  useEffect(() => {
+    ThemeUtils.changeThemeMode(theme)
+  }, [])
+
   return (
-    <div className="relative h-screen w-full">
-      <div className="absolute inset-0 bottom-20 m-auto flex h-fit w-fit flex-col space-y-4">
-        <div className="flex items-center justify-center space-x-4">
-          <a
-            href="https://vitejs.dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={viteLogo}
-              width="64"
-              className="logo"
-              alt="Vite logo"
-            />
-          </a>
-          <a
-            href="https://react.dev"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={reactLogo}
-              width="64"
-              className="logo react"
-              alt="React logo"
-            />
-          </a>
-        </div>
-        <span className="text-2xl">React TypeScript Starter Template</span>
-      </div>
-    </div>
+    <StyleProvider hashPriority="high">
+      <ConfigProvider
+        locale={zhCN}
+        theme={{
+          token: {},
+          algorithm:
+            theme === 'light' ? Theme.defaultAlgorithm : Theme.darkAlgorithm
+        }}
+      >
+        <RouterProvider router={createBrowserRouter(router)} />
+      </ConfigProvider>
+    </StyleProvider>
   )
 }

@@ -7,7 +7,7 @@ import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 export default function App() {
-  const queryClient = new QueryClient()
+  const [queryClient] = React.useState(() => new QueryClient())
 
   const { theme } = useThemeStore()
 

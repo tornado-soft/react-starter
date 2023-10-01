@@ -31,7 +31,13 @@
     },
     "types": ["unplugin-icons/types/react"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.d.ts", "src/**/*.json"],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.json",
+    "auto-imports.d.ts",
+    "env.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

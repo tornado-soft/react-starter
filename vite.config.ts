@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
   const { VITE_PORT, VITE_BASE_API_URL, VITE_MOCK_API_URL } =
     env as ImportMetaEnv
 
-  const port = parseInt(VITE_PORT, 10)
+  const port = parseInt(VITE_PORT, 10) || 5173
   const proxy: Record<string, string | ProxyOptions> = {
     '/base-api': {
       target: VITE_BASE_API_URL,
@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       AutoImport({
-        dts: './src/types/auto-imports.d.ts',
+        dts: true,
         include: [
           /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
           /\.md$/ // .md

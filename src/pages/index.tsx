@@ -36,7 +36,7 @@ export function Component(): React.JSX.Element {
           />
         </a>
       </div>
-      <span className="text-2xl">React TypeScript Starter Template</span>
+      <span className="text-2xl">{AppConfig.APP_NAME}</span>
       <Button className="self-center">Get Started</Button>
 
       <Switch

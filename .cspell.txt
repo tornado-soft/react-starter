@@ -4,6 +4,7 @@ brucesong
 clsx
 commitlint
 cssinjs
+gesturestart
 hookform
 iconify
 lintstaged

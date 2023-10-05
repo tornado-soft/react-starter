@@ -59,8 +59,8 @@ dependencies:
 
 devDependencies:
   '@brucesong/eslint-config-react':
-    specifier: ^1.0.11
-    version: 1.0.11(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
+    specifier: ^1.0.12
+    version: 1.0.12(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2)
   '@commitlint/cli':
     specifier: ^17.7.2
     version: 17.7.2
@@ -434,8 +434,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: true
 
-  /@brucesong/eslint-config-react@1.0.11(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2):
-    resolution: {integrity: sha512-q3Blq6aTJPLiEMiOG9+6FPMUlo6PCVXqBPR66YAnrOQ5fvF6rkowfzcnFEyuc8UTjC1tNuXwKS9NaJfG/SHRxQ==}
+  /@brucesong/eslint-config-react@1.0.12(eslint@8.50.0)(tailwindcss@3.3.3)(typescript@5.2.2):
+    resolution: {integrity: sha512-Ob7RIe2mSCvHoo+i01rCK8XE2c397zLfRb2m3JVIMWP43mdY5dYhxoWCd9WhrFcDMtNCg6gg2a7sXKOw41HB5g==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'

@@ -1,8 +1,9 @@
+import { Button, Switch } from 'antd'
+
 import reactLogo from '@/assets/svg/react.svg'
 import viteLogo from '@/assets/svg/vite.svg'
-import { Button, Switch } from 'antd'
-import SunIcon from '~icons/line-md/sun-rising-loop'
 import MoonIcon from '~icons/line-md/moon-filled-alt-loop'
+import SunIcon from '~icons/line-md/sun-rising-loop'
 
 export function Component(): React.JSX.Element {
   const { theme, toggleTheme } = useThemeStore()

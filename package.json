@@ -37,7 +37,7 @@
     "zustand": "^4.4.3"
   },
   "devDependencies": {
-    "@brucesong/eslint-config-react": "^1.0.11",
+    "@brucesong/eslint-config-react": "^1.0.12",
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "@iconify/json": "^2.2.124",

@@ -1,4 +1,5 @@
 import { createRoutesFromElements, Route } from 'react-router-dom'
+
 import NotFound from '@/pages/404'
 
 const router = createRoutesFromElements(

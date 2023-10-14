@@ -40,6 +40,7 @@
     "@brucesong/eslint-config-react": "^1.0.13",
     "@commitlint/cli": "^17.8.0",
     "@commitlint/config-conventional": "^17.8.0",
+    "@hookform/devtools": "^4.3.1",
     "@iconify/json": "^2.2.128",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",

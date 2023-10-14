@@ -2,7 +2,6 @@
   "name": "react-ts-starter-template",
   "description": "⚛️ An opinionated React/TypeScript starter template.",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:docker": "docker-compose up -d",
@@ -14,11 +13,12 @@
     "prettier:check": "prettier --check --ignore-unknown .",
     "prettier:fix": "prettier --write --ignore-unknown .",
     "type:check": "tsc",
+    "cz": "git-cz",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "^1.17.0",
+    "@ant-design/cssinjs": "^1.17.2",
     "@ant-design/happy-work-theme": "^1.0.0",
     "@hookform/resolvers": "^3.3.2",
     "@tanstack/react-query": "^4.36.1",
@@ -37,9 +37,9 @@
     "zustand": "^4.4.3"
   },
   "devDependencies": {
-    "@brucesong/eslint-config-react": "^1.0.12",
-    "@commitlint/cli": "^17.7.2",
-    "@commitlint/config-conventional": "^17.7.0",
+    "@brucesong/eslint-config-react": "^1.0.13",
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
     "@iconify/json": "^2.2.128",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
@@ -49,7 +49,9 @@
     "@types/react-dom": "^18.2.13",
     "@vitejs/plugin-react-swc": "^3.4.0",
     "autoprefixer": "^10.4.16",
-    "cspell": "^7.3.7",
+    "commitizen": "^4.3.0",
+    "cspell": "^7.3.8",
+    "cz-git": "^1.7.1",
     "eslint": "^8.51.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
@@ -61,6 +63,11 @@
     "unplugin-auto-import": "^0.16.6",
     "unplugin-icons": "^0.17.0",
     "vite": "^4.4.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "private": true,
   "license": "MIT"

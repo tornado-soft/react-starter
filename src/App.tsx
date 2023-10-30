@@ -27,7 +27,7 @@ export default function App() {
               theme === 'light' ? Theme.defaultAlgorithm : Theme.darkAlgorithm,
             token: {
               fontFamily:
-                'Nunito, Noto Sans, system-ui, -apple-system, Roboto, Helvetica Neue, Arial, sans-serif'
+                'Nunito, Noto Sans SC, system-ui, -apple-system, Roboto, Helvetica Neue, Arial, sans-serif'
             }
           }}
         >

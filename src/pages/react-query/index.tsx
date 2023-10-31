@@ -19,11 +19,15 @@ export function Component(): React.JSX.Element {
   })
 
   if (isError) {
-    return <span>Error: {(error as Error).message}</span>
+    return <span>Error: {error.message}</span>
   }
 
   const handleClearCache = () => {
-    queryClient.invalidateQueries(['users']).catch(() => {})
+    queryClient
+      .invalidateQueries({
+        queryKey: ['users']
+      })
+      .catch(() => {})
   }
 
   return (

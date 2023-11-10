@@ -8,8 +8,7 @@ import { defineConfig, loadEnv } from 'vite'
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd())
-  const { VITE_PORT, VITE_BASE_API_URL, VITE_MOCK_API_URL } =
-    env as ImportMetaEnv
+  const { VITE_PORT, VITE_BASE_API_URL, VITE_MOCK_API_URL } = env as ImportMetaEnv
 
   const port = parseInt(VITE_PORT, 10) || 5173
   const proxy: Record<string, string | ProxyOptions> = {
@@ -26,7 +25,7 @@ export default defineConfig(({ mode }) => {
   }
 
   return {
-    base: './',
+    base: '/',
     plugins: [
       react(),
       AutoImport({
